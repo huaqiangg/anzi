@@ -29,3 +29,17 @@ https://raw.githubusercontent.com/huaqiangg/anzi/main/kaoyan-countdown.ics
 ```
 
 生成 UTF-8、CRLF 换行的 iCalendar 文件，按 75 字节折行；全天事件使用 DATE 值和不包含在事件内的结束日期。事件 UID 按日历日期保持稳定。
+
+## 详细复习计划订阅
+
+已发布2026年9月28日至12月18日的详细复习日历，共219个事件。包括数二每周两套及当天批改、英二、政治、897遥感与GIS教材任务、周六补缺及周日休息；具体任务在事件详情中。
+
+[订阅详细复习计划](webcal://raw.githubusercontent.com/huaqiangg/anzi/main/study-plan.ics)
+
+也可以复制以下地址到 Apple 日历的“添加订阅日历”：
+
+```text
+https://raw.githubusercontent.com/huaqiangg/anzi/main/study-plan.ics
+```
+
+复习计划和数字倒计时为两个独立日历，可分别订阅。如果以前已将学习计划导入独立日历，请移除旧的学习计划日历后再订阅，避免重复。未来更新同一订阅地址，客户端刷新后即可获取。
