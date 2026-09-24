@@ -23,12 +23,13 @@ $lines = [System.Collections.Generic.List[string]]::new()
 @('BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Kaoyan Countdown//CN','CALSCALE:GREGORIAN','METHOD:PUBLISH','X-WR-CALNAME:考研倒计时','X-WR-TIMEZONE:Asia/Shanghai','X-WR-CALDESC:按用户指定日期 2026-12-20 倒计时；官方初试日期为 2026-12-19 至 20。') | ForEach-Object { $lines.Add($_) }
 for ($day = $StartDate; $day -le $TargetDate; $day = $day.AddDays(1)) {
     $remaining = ($TargetDate - $day).Days
-    $summary = if ($remaining -eq 0) { '考研倒计时 0 天｜目标日，加油！' } else { "考研倒计时 $remaining 天" }
+    $summary = "${remaining}天"
     @(
         'BEGIN:VEVENT',
         "UID:kaoyan-$($day.ToString('yyyyMMdd'))@kaoyan-countdown",
         "DTSTAMP:$stamp",
         "LAST-MODIFIED:$stamp",
+        'SEQUENCE:1',
         "DTSTART;VALUE=DATE:$($day.ToString('yyyyMMdd'))",
         "DTEND;VALUE=DATE:$($day.AddDays(1).ToString('yyyyMMdd'))",
         "SUMMARY:$summary",
