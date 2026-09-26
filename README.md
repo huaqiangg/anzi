@@ -43,3 +43,15 @@ https://raw.githubusercontent.com/huaqiangg/anzi/main/study-plan.ics
 ```
 
 复习计划和数字倒计时为两个独立日历，可分别订阅。如果以前已将学习计划导入独立日历，请移除旧的学习计划日历后再订阅，避免重复。未来更新同一订阅地址，客户端刷新后即可获取。
+
+## iPhone 订阅失败时的备用入口
+
+GitHub 原始文件地址返回 `text/plain`。下面的 jsDelivr 地址分发同一公开文件，已检查返回 `text/calendar; charset=utf-8`，包含219个事件；这并不代表已在所有手机网络实测成功。
+
+```text
+https://cdn.jsdelivr.net/gh/huaqiangg/anzi@main/study-plan.ics
+```
+
+在 iPhone 的「日历 → 日历 → 添加日历 → 添加订阅日历」中粘贴完整 HTTPS 地址。不要将 GitHub 仓库网页地址填入订阅栏。备用地址有 CDN 缓存，仓库更新后不一定立即刷新。
+
+[Apple 官方订阅说明](https://support.apple.com/zh-cn/guide/iphone/iph3d1110d4/ios)
