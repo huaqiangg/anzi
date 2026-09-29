@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Anzi//Calendar Connection Test//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Calendar Connection Test
+BEGIN:VEVENT
+UID:anzi-calendar-connection-test-20260929@huaqiangg
+DTSTAMP:20260929T000000Z
+DTSTART:20261001T060000Z
+DTEND:20261001T060500Z
+SUMMARY:Calendar connection test
+DESCRIPTION:Connection test only. You can unsubscribe after testing.
+END:VEVENT
+END:VCALENDAR
